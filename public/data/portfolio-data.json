@@ -1,0 +1,325 @@
+{
+    "education": [
+        {
+            "type": "Degree & Major",
+            "title": "BS in Artificial Intelligence",
+            "institution": "NUTECH (National University of Technology)",
+            "location": "Islamabad, Pakistan",
+            "duration": "2024 - Present",
+            "status": "Ongoing",
+            "description": "Deepening knowledge in machine learning, neural networks, computer vision, natural language processing, and advanced algorithms.",
+            "icon": "GraduationCap",
+            "color": "#7c3aed",
+            "badgeColor": "rgba(124, 58, 237, 0.15)",
+            "borderColor": "rgba(124, 58, 237, 0.3)",
+            "shadowColor": "rgba(124, 58, 237, 0.25)"
+        },
+        {
+            "type": "Higher Secondary School",
+            "title": "FSc in Computer Science",
+            "institution": "Punjab College",
+            "location": "Pakistan",
+            "duration": "2022 - 2024",
+            "status": "Completed",
+            "description": "Built strong foundations in mathematics, basic statistics, logic development, and programming in C/C++.",
+            "icon": "BookOpen",
+            "color": "#0891b2",
+            "badgeColor": "rgba(8, 145, 178, 0.15)",
+            "borderColor": "rgba(8, 145, 178, 0.3)",
+            "shadowColor": "rgba(8, 145, 178, 0.2)"
+        },
+        {
+            "type": "Secondary School Certificate",
+            "title": "Matriculation (Computer Science)",
+            "institution": "High Secondary School",
+            "location": "Pakistan",
+            "duration": "2020 - 2022",
+            "status": "Completed",
+            "description": "Introduced to core logic, computer configurations, programming methodologies, and technical science branches.",
+            "icon": "Award",
+            "color": "#059669",
+            "badgeColor": "rgba(5, 150, 105, 0.15)",
+            "borderColor": "rgba(5, 150, 105, 0.3)",
+            "shadowColor": "rgba(5, 150, 105, 0.2)"
+        }
+    ],
+    "skills": {
+        "mlSkills": [
+            {
+                "name": "Machine Learning",
+                "level": 88
+            },
+            {
+                "name": "Model Training",
+                "level": 85
+            },
+            {
+                "name": "Model Evaluation",
+                "level": 82
+            },
+            {
+                "name": "Model Tuning / Hyperparameter Optimization",
+                "level": 78
+            },
+            {
+                "name": "Model Deployment",
+                "level": 75
+            },
+            {
+                "name": "RAG-based Chatbot",
+                "level": 72
+            }
+        ],
+        "programmingSkills": [
+            {
+                "name": "Python",
+                "level": 90
+            },
+            {
+                "name": "Scikit-learn",
+                "level": 85
+            },
+            {
+                "name": "Frontend Development",
+                "level": 70
+            },
+            {
+                "name": "Data Preprocessing & Feature Engineering",
+                "level": 83
+            },
+            {
+                "name": "Statistical Analysis",
+                "level": 76
+            }
+        ],
+        "libraries": [
+            {
+                "name": "Scikit-learn",
+                "desc": "ML algorithms & pipelines"
+            },
+            {
+                "name": "Pandas",
+                "desc": "Data manipulation & analysis"
+            },
+            {
+                "name": "NumPy",
+                "desc": "Numerical computing"
+            },
+            {
+                "name": "Matplotlib / Seaborn",
+                "desc": "Data visualization"
+            },
+            {
+                "name": "TensorFlow / Keras",
+                "desc": "Deep learning models"
+            },
+            {
+                "name": "LangChain",
+                "desc": "LLM & RAG pipelines"
+            },
+            {
+                "name": "FastAPI",
+                "desc": "ML model APIs"
+            },
+            {
+                "name": "Streamlit",
+                "desc": "ML app frontends"
+            }
+        ],
+        "tools": [
+            "Jupyter Notebook",
+            "VS Code",
+            "Git & GitHub",
+            "Google Colab",
+            "Docker",
+            "Hugging Face"
+        ]
+    },
+    "projects": [
+        {
+            "title": "Hate Speech Recognition in Roman Urdu",
+            "description": "Built an NLP model to detect and classify hate speech in Roman Urdu text. Uses text preprocessing, TF-IDF vectorization, and machine learning classifiers to identify harmful content with high accuracy.",
+            "tags": [
+                "NLP",
+                "Python",
+                "Scikit-learn",
+                "Text Classification",
+                "TF-IDF"
+            ],
+            "image": "/src/assets/projects/hate-speech.jpg",
+            "category": "NLP",
+            "accent": "#c4b5fd"
+        },
+        {
+            "title": "Fake News Detection",
+            "description": "Developed a machine learning system to distinguish fake news from real news articles using natural language processing and classification algorithms. Trained on a labeled news dataset.",
+            "tags": [
+                "NLP",
+                "Python",
+                "ML",
+                "Classification",
+                "Pandas"
+            ],
+            "image": "/src/assets/projects/fake-news.jpg",
+            "category": "NLP",
+            "accent": "#67e8f9"
+        },
+        {
+            "title": "Handwritten Digit Recognition",
+            "description": "Implemented a CNN-based deep learning model to recognize handwritten digits from the MNIST dataset with over 98% accuracy. Includes a frontend interface for real-time digit drawing and prediction.",
+            "tags": [
+                "Deep Learning",
+                "CNN",
+                "Python",
+                "TensorFlow",
+                "Image Processing"
+            ],
+            "image": "/src/assets/projects/digit-recognition.jpg",
+            "category": "Computer Vision",
+            "accent": "#a78bfa"
+        },
+        {
+            "title": "Customer Segmentation",
+            "description": "Applied K-Means and hierarchical clustering to segment customers based on purchasing behavior, demographics, and engagement patterns. Provides actionable insights for targeted marketing.",
+            "tags": [
+                "ML",
+                "Clustering",
+                "Python",
+                "Pandas",
+                "Seaborn"
+            ],
+            "image": "/src/assets/projects/customer-segmentation.jpg",
+            "category": "Data Science",
+            "accent": "#6ee7b7"
+        },
+        {
+            "title": "Diabetes Predictor",
+            "description": "Predictive machine learning model that assesses diabetes risk based on health parameters like glucose level, BMI, age, and blood pressure. Includes an interactive Streamlit frontend.",
+            "tags": [
+                "Healthcare AI",
+                "Python",
+                "Scikit-learn",
+                "Streamlit",
+                "Prediction"
+            ],
+            "image": "/src/assets/projects/diabetes-predictor.jpg",
+            "category": "Healthcare AI",
+            "accent": "#fda4af"
+        },
+        {
+            "title": "Credit Scoring Model",
+            "description": "Financial ML model that evaluates creditworthiness and predicts loan default risk. Uses feature engineering, logistic regression, and ensemble methods on financial transaction data.",
+            "tags": [
+                "FinTech",
+                "ML",
+                "Python",
+                "Risk Analysis",
+                "Feature Engineering"
+            ],
+            "image": "/src/assets/projects/credit-scoring.jpg",
+            "category": "FinTech",
+            "accent": "#fdba74"
+        },
+        {
+            "title": "TutorConnect-Pakistan",
+            "description": "Full-stack AI-powered platform connecting students with qualified tutors across Pakistan. Features smart tutor matching, scheduling, and an integrated RAG-based chatbot for academic support.",
+            "tags": [
+                "Full Stack",
+                "AI",
+                "RAG",
+                "React",
+                "Python",
+                "EdTech"
+            ],
+            "image": "/src/assets/projects/tutor-connect.jpg",
+            "category": "Full Stack",
+            "accent": "#6ee7b7"
+        }
+    ],
+    "journey": [
+        {
+            "year": "2020",
+            "title": "Started Programming Journey",
+            "subtitle": "Foundation",
+            "description": "Began learning Python programming fundamentals. Fell in love with code and its ability to solve real problems. Explored basic algorithms, data structures, and programming logic.",
+            "icon": "Code",
+            "color": "#7c3aed",
+            "items": [
+                "Python basics",
+                "Data structures",
+                "Problem solving",
+                "Algorithms"
+            ]
+        },
+        {
+            "year": "2021",
+            "title": "Machine Learning Fundamentals",
+            "subtitle": "First Steps into AI",
+            "description": "Discovered the world of machine learning. Studied supervised and unsupervised learning, worked through Andrew Ng's ML course, and built my first predictive models.",
+            "icon": "Brain",
+            "color": "#0891b2",
+            "items": [
+                "Supervised Learning",
+                "Unsupervised Learning",
+                "Linear Regression",
+                "Decision Trees"
+            ]
+        },
+        {
+            "year": "2022",
+            "title": "First Real ML Projects",
+            "subtitle": "Hands-on Experience",
+            "description": "Applied ML knowledge to real-world projects. Built handwritten digit recognition using CNN, customer segmentation with clustering, and explored data preprocessing techniques.",
+            "icon": "BookOpen",
+            "color": "#059669",
+            "items": [
+                "Handwritten Digit Recognition",
+                "Customer Segmentation",
+                "Data Preprocessing",
+                "Feature Engineering"
+            ]
+        },
+        {
+            "year": "2023",
+            "title": "Advanced ML & NLP Projects",
+            "subtitle": "Growing Expertise",
+            "description": "Tackled complex NLP challenges. Built hate speech recognition for Roman Urdu, fake news detection system, and diabetes predictor. Deepened expertise in Scikit-learn and model evaluation.",
+            "icon": "Star",
+            "color": "#d97706",
+            "items": [
+                "Hate Speech Recognition",
+                "Fake News Detection",
+                "Diabetes Predictor",
+                "NLP & Text Classification"
+            ]
+        },
+        {
+            "year": "2024",
+            "title": "AI Solutions & Deployment",
+            "subtitle": "Production-Ready Models",
+            "description": "Focused on building production-ready AI systems. Developed credit scoring model, RAG-based chatbot, and launched TutorConnect-Pakistan — an AI-powered EdTech platform.",
+            "icon": "Rocket",
+            "color": "#7c3aed",
+            "items": [
+                "Credit Scoring Model",
+                "RAG-based Chatbot",
+                "Model Deployment",
+                "TutorConnect-Pakistan"
+            ]
+        },
+        {
+            "year": "Now",
+            "title": "Building the Future with AI",
+            "subtitle": "Continuous Growth",
+            "description": "Currently expanding expertise in LLMs, advanced RAG systems, and MLOps. Open to collaborations and excited about the intersection of AI with real-world impact.",
+            "icon": "Trophy",
+            "color": "#06b6d4",
+            "items": [
+                "LLM Integration",
+                "MLOps",
+                "Advanced RAG",
+                "Open to Opportunities"
+            ]
+        }
+    ]
+}
