@@ -4,6 +4,13 @@
 
 ![Portfolio Preview](attached_assets/preview.png)
 
+## 🌐 Live Demo
+
+🔗 **Portfolio Website:**  
+https://my-portfolio.saifpakistani0317.workers.dev
+
+> Experience the live portfolio showcasing my projects, skills, education, and professional journey.
+
 ### 🚀 Modern Portfolio Website
 
 A modern, responsive, and interactive portfolio showcasing my skills, projects, education, and journey as an **Artificial Intelligence student** and **Machine Learning Engineer**.
