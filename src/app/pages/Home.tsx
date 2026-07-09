@@ -84,28 +84,28 @@ const featuredProjects = [
     subtitle: "Roman Urdu NLP",
     description: "NLP model detecting hate speech in Roman Urdu using text classification.",
     tags: ["NLP", "Python", "ML"],
-    image: "/src/assets/projects/hate-speech.jpg",
+    image: "/assets/projects/hate-speech.jpg",
   },
   {
     title: "Fake News Detection",
     subtitle: "Text Classification",
     description: "ML model identifying misinformation using text feature analysis.",
     tags: ["NLP", "Python", "Classification"],
-    image: "/src/assets/projects/fake-news.jpg",
+    image: "/assets/projects/fake-news.jpg",
   },
   {
     title: "Diabetes Predictor",
     subtitle: "Healthcare AI",
     description: "Predictive model for early diabetes detection via health parameters.",
     tags: ["Healthcare", "Scikit-learn"],
-    image: "/src/assets/projects/diabetes-predictor.jpg",
+    image: "/assets/projects/diabetes-predictor.jpg",
   },
   {
     title: "TutorConnect Pakistan",
     subtitle: "EdTech Platform",
     description: "AI-powered platform connecting students with qualified tutors across Pakistan.",
     tags: ["Full Stack", "AI", "React"],
-    image: "/src/assets/projects/tutor-connect.jpg",
+    image: "/assets/projects/tutor-connect.jpg",
   },
 ];
 
@@ -305,7 +305,7 @@ export default function Home() {
                   style={{ background: "linear-gradient(135deg, #4c1d95, #1e1b4b, #0c4a6e)" }}
                 >
                   <img
-                    src="/src/assets/profile.png"
+                    src="/assets/profile.png"
                     alt="Saifullah Umar"
                     className="w-full h-full object-cover object-top"
                   />

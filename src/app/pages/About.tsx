@@ -66,7 +66,7 @@ export default function About() {
                   className="absolute inset-8 rounded-full overflow-hidden"
                   style={{ background: "linear-gradient(135deg, #4c1d95, #1e1b4b, #0c4a6e)" }}
                 >
-                  <img src="/src/assets/profile.png" alt="Saifullah Umar" className="w-full h-full object-cover object-top" />
+                  <img src="/assets/profile.png" alt="Saifullah Umar" className="w-full h-full object-cover object-top" />
                 </div>
               </div>
 

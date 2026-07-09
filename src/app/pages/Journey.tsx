@@ -49,7 +49,7 @@ export default function Journey() {
               <div className="absolute inset-0 rounded-full" style={{ border: "2px solid rgba(139,92,246,0.4)" }} />
               <div className="absolute inset-4 rounded-full" style={{ border: "1px solid rgba(6,182,212,0.25)" }} />
               <div className="absolute inset-8 rounded-full overflow-hidden" style={{ background: "linear-gradient(135deg, #4c1d95, #1e1b4b, #0c4a6e)" }}>
-                <img src="/src/assets/profile.png" alt="Saifullah Umar" className="w-full h-full object-cover object-top" />
+                <img src="/assets/profile.png" alt="Saifullah Umar" className="w-full h-full object-cover object-top" />
               </div>
             </div>
             <div className="mt-6 text-center">

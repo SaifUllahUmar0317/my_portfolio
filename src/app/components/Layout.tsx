@@ -67,7 +67,7 @@ export default function Layout() {
 
           <div className="hidden lg:block">
             <a
-              href="/src/assets/resume.pdf"
+              href="/assets/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn-shimmer btn-glow px-5 py-2 rounded-full text-sm font-semibold text-white relative overflow-hidden"
@@ -104,7 +104,7 @@ export default function Layout() {
               </NavLink>
             ))}
             <a
-              href="/src/assets/resume.pdf"
+              href="/assets/resume.pdf"
               target="_blank"
               rel="noreferrer"
               onClick={() => setMobileOpen(false)}

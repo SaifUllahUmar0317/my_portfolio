@@ -146,7 +146,7 @@
                 "Text Classification",
                 "TF-IDF"
             ],
-            "image": "/src/assets/projects/hate-speech.jpg",
+            "image": "/assets/projects/hate-speech.jpg",
             "category": "NLP",
             "accent": "#c4b5fd"
         },
@@ -160,7 +160,7 @@
                 "Classification",
                 "Pandas"
             ],
-            "image": "/src/assets/projects/fake-news.jpg",
+            "image": "/assets/projects/fake-news.jpg",
             "category": "NLP",
             "accent": "#67e8f9"
         },
@@ -174,7 +174,7 @@
                 "TensorFlow",
                 "Image Processing"
             ],
-            "image": "/src/assets/projects/digit-recognition.jpg",
+            "image": "/assets/projects/digit-recognition.jpg",
             "category": "Computer Vision",
             "accent": "#a78bfa"
         },
@@ -188,7 +188,7 @@
                 "Pandas",
                 "Seaborn"
             ],
-            "image": "/src/assets/projects/customer-segmentation.jpg",
+            "image": "/assets/projects/customer-segmentation.jpg",
             "category": "Data Science",
             "accent": "#6ee7b7"
         },
@@ -202,7 +202,7 @@
                 "Streamlit",
                 "Prediction"
             ],
-            "image": "/src/assets/projects/diabetes-predictor.jpg",
+            "image": "/assets/projects/diabetes-predictor.jpg",
             "category": "Healthcare AI",
             "accent": "#fda4af"
         },
@@ -216,7 +216,7 @@
                 "Risk Analysis",
                 "Feature Engineering"
             ],
-            "image": "/src/assets/projects/credit-scoring.jpg",
+            "image": "/assets/projects/credit-scoring.jpg",
             "category": "FinTech",
             "accent": "#fdba74"
         },
@@ -231,7 +231,7 @@
                 "Python",
                 "EdTech"
             ],
-            "image": "/src/assets/projects/tutor-connect.jpg",
+            "image": "/assets/projects/tutor-connect.jpg",
             "category": "Full Stack",
             "accent": "#6ee7b7"
         }
