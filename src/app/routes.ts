@@ -8,6 +8,7 @@ import Journey from "./pages/Journey";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
+import Experience from "./pages/Experience";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "about", Component: About },
       { path: "education", Component: Education },
+      { path: "experience", Component: Experience },
       { path: "skills", Component: Skills },
       { path: "projects", Component: Projects },
       { path: "journey", Component: Journey },

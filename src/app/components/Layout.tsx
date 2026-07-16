@@ -6,6 +6,7 @@ const navLinks = [
   { to: "/", label: "Home", end: true },
   { to: "/about", label: "About", end: false },
   { to: "/education", label: "Education", end: false },
+  { to: "/experience", label: "Experience", end: false },
   { to: "/skills", label: "Skills", end: false },
   { to: "/projects", label: "Projects", end: false },
   { to: "/journey", label: "Journey", end: false },
