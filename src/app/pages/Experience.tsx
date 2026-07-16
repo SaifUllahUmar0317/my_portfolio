@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { BrainCircuit, BriefcaseBusiness, CalendarDays, Code2, GraduationCap, Sparkles } from "lucide-react";
+import { BriefcaseBusiness, Sparkles } from "lucide-react";
 
 const experienceEntries = [
   {
@@ -7,10 +7,10 @@ const experienceEntries = [
     company: "Self-Employed",
     period: "2025 – Present",
     description:
-      "Builds AI-powered web applications, data analysis dashboards, and responsive business websites for clients worldwide while delivering machine learning solutions tailored to real business needs.",
+      "Delivering AI-powered applications, data-driven dashboards, and high-quality web solutions for clients across different industries with a focus on impact and reliability.",
     highlights: [
-      "Developed AI-powered web applications with interactive user experiences",
-      "Built data analysis and visualization dashboards for business insights",
+      "Built AI-powered web applications with modern, responsive interfaces",
+      "Developed dashboards for data analysis, visualization, and business insights",
       "Implemented machine learning models for classification and predictive tasks",
     ],
     accent: "#7c3aed",
@@ -20,47 +20,14 @@ const experienceEntries = [
     company: "CodeAlpha",
     period: "Sep 2025 – Oct 2025",
     description:
-      "Completed a hands-on internship focused on building machine learning solutions using Python and Scikit-learn, with emphasis on preprocessing, feature engineering, and model evaluation.",
+      "Completed an intensive internship focused on real-world machine learning workflows, including data preparation, model development, evaluation, and optimization.",
     highlights: [
       "Developed machine learning solutions using Python and Scikit-learn",
       "Performed data cleaning, preprocessing, and feature engineering",
-      "Evaluated and optimized predictive models for real-world tasks",
+      "Evaluated and improved predictive models for practical use cases",
     ],
     accent: "#06b6d4",
   },
-];
-
-const educationEntries = [
-  {
-    title: "BS in Artificial Intelligence",
-    institution: "NUTECH University",
-    period: "2024 – Now",
-    accent: "#7c3aed",
-  },
-  {
-    title: "Intermediate in Computer Science",
-    institution: "PAEC Model College",
-    period: "2022 – 2024",
-    accent: "#06b6d4",
-  },
-  {
-    title: "Matric in Computer Science",
-    institution: "IMCG Nilore College",
-    period: "2020 – 2022",
-    accent: "#34d399",
-  },
-];
-
-const skillHighlights = [
-  "AI Development",
-  "Machine Learning",
-  "Exploratory Data Analysis",
-  "Model Evaluation",
-  "Python",
-  "Scikit-learn",
-  "Pandas",
-  "NumPy",
-  "Streamlit",
 ];
 
 export default function Experience() {
@@ -86,121 +53,60 @@ export default function Experience() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-[1.2fr_0.8fr] gap-8">
-          <motion.div
-            className="rounded-3xl p-6 sm:p-8"
-            style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", backdropFilter: "blur(12px)" }}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 rounded-2xl" style={{ background: "rgba(124,58,237,0.14)", color: "#a78bfa" }}>
-                <BriefcaseBusiness size={20} />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-white">Work Experience</h2>
-                <p className="text-gray-500 text-sm">Professional growth in AI, development, and problem-solving</p>
-              </div>
+        <motion.div
+          className="rounded-3xl p-6 sm:p-8"
+          style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", backdropFilter: "blur(12px)" }}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-3 rounded-2xl" style={{ background: "rgba(124,58,237,0.14)", color: "#a78bfa" }}>
+              <BriefcaseBusiness size={20} />
             </div>
-
-            <div className="space-y-7">
-              {experienceEntries.map((exp, index) => (
-                <motion.div
-                  key={exp.role}
-                  className="relative pl-7"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.55, delay: index * 0.1 }}
-                >
-                  <div className="absolute left-0 top-2.5 w-3 h-3 rounded-full" style={{ background: exp.accent, boxShadow: `0 0 0 6px ${exp.accent}20` }} />
-                  <div className="border-l border-white/10 pl-5 pb-2">
-                    <div className="flex flex-wrap items-center gap-2 mb-2">
-                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ background: `${exp.accent}18`, color: exp.accent }}>
-                        {exp.period}
-                      </span>
-                      <span className="text-gray-500 text-sm">{exp.company}</span>
-                    </div>
-                    <h3 className="text-white text-xl font-bold mb-2">{exp.role}</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-3">{exp.description}</p>
-                    <ul className="space-y-2">
-                      {exp.highlights.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
-                          <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0" style={{ background: exp.accent }} />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              ))}
+            <div>
+              <h2 className="text-2xl font-bold text-white">Professional Experience</h2>
+              <p className="text-gray-500 text-sm">Focused on building impactful AI solutions and dependable software products</p>
             </div>
-          </motion.div>
-
-          <div className="space-y-8">
-            <motion.div
-              className="rounded-3xl p-6"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <div className="p-3 rounded-2xl" style={{ background: "rgba(6,182,212,0.14)", color: "#67e8f9" }}>
-                  <Sparkles size={18} />
-                </div>
-                <h3 className="text-xl font-bold text-white">Core Strength</h3>
-              </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                Machine Learning Engineer and Python Developer with hands-on experience in building AI solutions, predictive models, data analysis pipelines, and interactive web applications.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {skillHighlights.map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 rounded-full text-xs font-medium text-gray-200" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}>
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="rounded-3xl p-6"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <div className="p-3 rounded-2xl" style={{ background: "rgba(16,185,129,0.14)", color: "#6ee7b7" }}>
-                  <GraduationCap size={18} />
-                </div>
-                <h3 className="text-xl font-bold text-white">Education</h3>
-              </div>
-              <div className="space-y-4">
-                {educationEntries.map((edu) => (
-                  <div key={edu.title} className="flex items-start gap-3 rounded-2xl p-3" style={{ background: "rgba(255,255,255,0.035)", border: "1px solid rgba(255,255,255,0.05)" }}>
-                    <div className="p-2 rounded-xl mt-0.5" style={{ background: `${edu.accent}14`, color: edu.accent }}>
-                      <Code2 size={14} />
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2 flex-wrap mb-1">
-                        <h4 className="text-white font-semibold text-sm">{edu.title}</h4>
-                        <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: `${edu.accent}15`, color: edu.accent }}>
-                          {edu.period}
-                        </span>
-                      </div>
-                      <p className="text-gray-500 text-sm">{edu.institution}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
           </div>
-        </div>
+
+          <div className="space-y-6">
+            {experienceEntries.map((exp, index) => (
+              <motion.div
+                key={exp.role}
+                className="rounded-2xl p-5 sm:p-6"
+                style={{ background: "rgba(255,255,255,0.035)", border: "1px solid rgba(255,255,255,0.06)" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.55, delay: index * 0.1 }}
+                whileHover={{ y: -4, borderColor: `${exp.accent}40` }}
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+                  <div>
+                    <h3 className="text-white text-xl font-bold">{exp.role}</h3>
+                    <p className="text-sm font-medium" style={{ color: exp.accent }}>{exp.company}</p>
+                  </div>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ background: `${exp.accent}18`, color: exp.accent }}>
+                    {exp.period}
+                  </span>
+                </div>
+
+                <p className="text-gray-400 text-sm leading-relaxed mb-4">{exp.description}</p>
+
+                <ul className="space-y-2">
+                  {exp.highlights.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0" style={{ background: exp.accent }} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </div>
   );
