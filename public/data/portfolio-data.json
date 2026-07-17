@@ -234,6 +234,48 @@
             "image": "/assets/projects/tutor-connect.jpg",
             "category": "Full Stack",
             "accent": "#6ee7b7"
+        },
+        {
+            "title": "FusionAI (Multimodal Agentic AI)",
+            "description": "Developed a multimodal agentic AI assistant that integrates multiple intelligent tools into a single platform. Features include AI-powered word generation, GitHub repository search, URL content analysis, email analysis, and seamless communication with multiple LLMs such as GPT through a unified interface.",
+            "tags": [
+                "Agentic AI",
+                "LLM",
+                "Python",
+                "GitHub API",
+                "Automation"
+            ],
+            "image": "/assets/projects/fusionai.png",
+            "category": "Generative AI",
+            "accent": "#a78bfa"
+        },
+        {
+            "title": "OCR & Multi-Language Translator",
+            "description": "Built an intelligent OCR application that extracts text from images using Optical Character Recognition and instantly translates the extracted text into multiple languages including Spanish, German, Chinese, Russian, French, and more. Supports scanned documents, screenshots, and printed text.",
+            "tags": [
+                "OCR",
+                "Computer Vision",
+                "Python",
+                "OpenCV",
+                "Translation"
+            ],
+            "image": "/assets/projects/ocr-translator.png",
+            "category": "Computer Vision",
+            "accent": "#67e8f9"
+        },
+        {
+            "title": "Eye-Controlled Smart Car",
+            "description": "Developed a computer vision-based smart vehicle that is controlled entirely through eye movements. The system tracks the user's gaze in real time to navigate the car—looking forward moves it forward, looking downward drives it in reverse, looking left or right changes direction, keeping the eyes centered stops the vehicle, and closing the eyes triggers an emergency stop. The project combines real-time eye tracking, computer vision, and wireless communication for intuitive hands-free control.",
+            "tags": [
+                "Computer Vision",
+                "Eye Tracking",
+                "Python",
+                "OpenCV",
+                "Arduino"
+            ],
+            "image": "/assets/projects/eye-controlled-car.jpg",
+            "category": "Robotics & Computer Vision",
+            "accent": "#60a5fa"
         }
     ],
     "journey": [
