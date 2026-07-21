@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, Phone, Send, CheckCircle, AlertCircle } from "lucide-react";
 import { motion } from "motion/react";
 import emailjs from "@emailjs/browser";
@@ -16,6 +16,12 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // Initialize EmailJS on component mount
+  useEffect(() => {
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "-Q2ISPQr5kpCtKBN7";
+    emailjs.init(publicKey);
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
@@ -23,25 +29,36 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     setError("");
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_9xu772n";
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_0m4y6mz";
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "-Q2ISPQr5kpCtKBN7";
+
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           name: form.name,
           from_name: form.name,
           from_email: form.email,
-          reply_to: form.email,   // sets Reply-To header so you can reply directly
+          reply_to: form.email,
           subject: form.subject,
           message: form.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        publicKey,
       );
       setSent(true);
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", err);
-      setError("Failed to send. Please email me directly at saifullahumar.ai@gmail.com");
+      console.error("EmailJS error - Full object:", err);
+      console.error("EmailJS error - Type:", typeof err);
+      if (err instanceof Error) {
+        console.error("EmailJS error - Message:", err.message);
+        console.error("EmailJS error - Stack:", err.stack);
+      }
+      const errorMsg = err instanceof Error ? err.message : JSON.stringify(err);
+      setError(`Failed to send. Please email me directly at saifullahumar.ai@gmail.com. Details: ${errorMsg}`);
     } finally {
       setLoading(false);
     }
